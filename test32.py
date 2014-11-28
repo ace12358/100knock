@@ -21,6 +21,7 @@ for line in open(sys.argv[1]):
 	else:
 		dict[list[0]] = tapple
 
+
 marshal.dump(dict, f)
 f.close()
 

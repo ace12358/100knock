@@ -36,6 +36,7 @@ for key, value in tweet_dict.items():
                 if ABC is None:
                         pass
                 else:
-                        print ABC.group(0) 
+                        print ABC.group(0)
+                        print "%s\t%s"%(ABC.group(1), ABC.group(2)) 
 
 
