@@ -1,0 +1,1 @@
+db.tweets.find({"url" : "http://twitter.com/tttsg9p/status/485830086923280384"})

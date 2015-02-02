@@ -1,0 +1,3 @@
+db.tweets.find().sort({"freq_rt":-1}).limit(10)
+#特定のhitonitaisite
+db.tweets.find({"nickname" : "ゆうこ@ミンティア"}).sort({"freq_rt":-1}).limit(10)

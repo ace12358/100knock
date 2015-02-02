@@ -30,13 +30,11 @@ class KyotoCabinet(kc.DB):
 if __name__ == "__main__":
 
     db = KyotoCabinet()
-    db.open("sample.kch", kc.DB.OWRITER | kc.DB.OCREATE)
-    for line in open(sys.argv[1]):
+    db.open("100knock39-40.kch", kc.DB.OWRITER | kc.DB.OCREATE)
+    for line in sys.stdin:
         itemList = line.strip().split("\t")
         bigram = (itemList[1], itemList[2])
-        #bigram = " ".join(itemList[1:3])
         prob = float(itemList[0])
-        #print bigram,prob
         db.set(bigram, prob)
     for rec in db.cursor():
         print rec[0], rec[1]

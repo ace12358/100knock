@@ -4,7 +4,7 @@ import sys,os,math,re,marshal
 from Morph import *
 from collections import defaultdict
 if __name__ == "__main__":
-        files = os.listdir('/Users/kitagawayoshiaki/Dropbox/100knock/my100knock/work_dir_n')
+        files = os.listdir('/Users/kitagawayoshiaki/Works/LabStudy/100knock/work_dir_n')
         N = len(files)
         tf_freq = defaultdict(lambda:0)
         #tfの計算 

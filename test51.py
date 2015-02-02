@@ -1,4 +1,4 @@
-:#!/usr/bin/python
+#!/usr/bin/python
 # coding=utf-8
  
 import CaboCha
@@ -9,15 +9,6 @@ def main():
 		Cabo = CaboCha.Parser('--charset=UTF8')
 		print Cabo.parse(line).toString(CaboCha.FORMAT_LATTICE),
 		
-
-
-
-
-
-
-
-
-
  
 def test():
  
